@@ -1,10 +1,11 @@
 import * as React from "react";
-import { ChakraProvider, Box, Text, theme } from "@chakra-ui/react";
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import SidebarWithNavbar from "./components/navsection";
+import ProductCard from "./components/card";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Text>Hello</Text>
-    </Box>
+    <SidebarWithNavbar children={undefined} />
+    <ProductCard />
   </ChakraProvider>
 );

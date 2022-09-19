@@ -10,7 +10,7 @@ import {
 const IMAGE =
   "https://i0.wp.com/tvguru.co.ke/wp-content/uploads/2022/07/Samsung-55bu8000.webp?fit=600%2C600&ssl=1";
 
-function ProductSimple() {
+function ProductCard() {
   return (
     <Box
       role={"group"}
@@ -74,4 +74,4 @@ function ProductSimple() {
     </Box>
   );
 }
-export default ProductSimple;
+export default ProductCard;

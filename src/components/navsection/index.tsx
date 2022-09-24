@@ -33,10 +33,12 @@ function Navbar() {
         </Heading>
       </Box>
       <Box>
-        <Link>Sell on Helptors</Link>
+        <Link color="#2264D1" _hover={{ textDecor: "none" }}>
+          Sell on Helptors
+        </Link>
       </Box>
       <Box>
-        <Button>Register</Button>
+        <Button color="#2264D1">Register</Button>
       </Box>
       <Box w="476px">
         <InputGroup>
@@ -44,6 +46,7 @@ function Navbar() {
           <Input
             variant="filled"
             placeholder="useless items on white background"
+            bg="#EDEDF0"
           />
           <InputRightElement
             children={<CloseIcon cursor="pointer" color="#2979FF" />}
@@ -52,14 +55,16 @@ function Navbar() {
       </Box>
       <Box>
         {" "}
-        <Link>Consumer Electronics</Link>
+        <Link color="#2264D1" _hover={{ textDecor: "none" }}>
+          Consumer Electronics
+        </Link>
       </Box>
 
       <Box>
-        <Button>Sign in</Button>
+        <Button color="#2264D1">Sign in</Button>
       </Box>
       <Box>
-        <Button>My Cart</Button>
+        <Button color="#2264D1">My Cart</Button>
       </Box>
       <Box>
         <Avatar name="" src="" />

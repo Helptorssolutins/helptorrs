@@ -11,9 +11,21 @@ import React from "react";
 
 function Navbar() {
   return (
-    <Flex justifyContent="space-between" pos="sticky" mt="20px">
+    <Flex
+      justifyContent="space-evenly"
+      pos="sticky"
+      mt="20px"
+      alignItems="center"
+    >
       <Box>
-        <Heading>Helptors</Heading>
+        <Heading
+          fontSize="36px"
+          fontWeight={500}
+          h="46px"
+          fontFamily="Red Hat Display"
+        >
+          Helptors
+        </Heading>
       </Box>
       <Box>
         <Link>Sell on Helptors</Link>
@@ -32,9 +44,15 @@ function Navbar() {
         <Link>Consumer Electronics</Link>
       </Box>
 
-      <Button>Sign in</Button>
-      <Button>My Cart</Button>
-      <Avatar name="" src="" />
+      <Box>
+        <Button>Sign in</Button>
+      </Box>
+      <Box>
+        <Button>My Cart</Button>
+      </Box>
+      <Box>
+        <Avatar name="" src="" />
+      </Box>
     </Flex>
   );
 }

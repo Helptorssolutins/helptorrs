@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   Avatar,
   Box,
@@ -5,9 +7,12 @@ import {
   Flex,
   Heading,
   Input,
+  InputGroup,
+  InputLeftElement,
+  InputRightElement,
   Link,
 } from "@chakra-ui/react";
-import React from "react";
+import { CloseIcon, SearchIcon } from "@chakra-ui/icons";
 
 function Navbar() {
   return (
@@ -34,10 +39,16 @@ function Navbar() {
         <Button>Register</Button>
       </Box>
       <Box w="476px">
-        <Input
-          variant="filled"
-          placeholder="useless items on white background"
-        />
+        <InputGroup>
+          <InputLeftElement children={<SearchIcon cursor="pointer" />} />
+          <Input
+            variant="filled"
+            placeholder="useless items on white background"
+          />
+          <InputRightElement
+            children={<CloseIcon cursor="pointer" color="#2979FF" />}
+          />
+        </InputGroup>
       </Box>
       <Box>
         {" "}

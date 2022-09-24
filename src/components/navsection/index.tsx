@@ -4,7 +4,6 @@ import {
   Avatar,
   Box,
   Button,
-  Flex,
   Heading,
   Input,
   InputGroup,
@@ -16,11 +15,12 @@ import { CloseIcon, SearchIcon } from "@chakra-ui/icons";
 
 function Navbar() {
   return (
-    <Flex
+    <Box
       justifyContent="space-evenly"
       pos="sticky"
       mt="20px"
       alignItems="center"
+      display={{ base: "none", lg: "flex" }}
     >
       <Box>
         <Heading
@@ -69,7 +69,7 @@ function Navbar() {
       <Box>
         <Avatar name="" src="" />
       </Box>
-    </Flex>
+    </Box>
   );
 }
 
